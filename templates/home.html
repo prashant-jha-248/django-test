@@ -1,0 +1,26 @@
+<style>
+    h1 {text-align: center;}
+    .chat-box {text-align: center;}
+</style>
+<h1>{{name}}</h1>
+<br><br><br>
+<form action="ans" method="post">
+
+{% csrf_token %}
+
+<div class="chat-box">
+    <div class="chat-box-header">
+        <h3>Message Us</h3>
+       
+    </div>
+    
+    <div class="chat-box-footer">
+      
+        <input placeholder="Enter Your Message" type="text" name="question" />
+        <input type="submit">
+       
+    </div>
+</div>
+
+</div>
+</form>
